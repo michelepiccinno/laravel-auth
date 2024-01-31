@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers\Admin; 
-use App\Http\Controllers\Controller;
 
-use App\Models\Project;
-use App\Http\Requests\StoreProjectRequest;
-use App\Http\Requests\UpdateProjectRequest;
+use App\Http\Controllers\Controller;
+use App\Models\Post;
+use App\Http\Requests\StorePostRequest;
+use App\Http\Requests\UpdatePostRequest;
 
 class PostController extends Controller
 {
@@ -28,7 +28,7 @@ class PostController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreProjectRequest $request)
+    public function store(StorePostRequest $request)
     {
         //
     }
@@ -36,7 +36,7 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Project $project)
+    public function show(Post $post)
     {
         //
     }
@@ -44,7 +44,7 @@ class PostController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Project $project)
+    public function edit(Post $post)
     {
         //
     }
@@ -52,7 +52,7 @@ class PostController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateProjectRequest $request, Project $project)
+    public function update(UpdatePostRequest $request, Post $post)
     {
         //
     }
@@ -60,7 +60,7 @@ class PostController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Project $project)
+    public function destroy(Post $post)
     {
         //
     }
